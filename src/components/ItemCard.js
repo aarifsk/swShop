@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const ItemCard = ({item}) => (
     <div className="ui card">
@@ -16,4 +17,13 @@ const ItemCard = ({item}) => (
     </div>
 );
 
+ItemCard.propTypes = {
+    item:PropTypes.shape({
+        name:PropTypes.string.isRequired,
+        image:PropTypes.string.isRequired,
+        licenses:PropTypes.string.isRequired,
+        duration:PropTypes.number.isRequired,
+        price:PropTypes.number.isRequired,
+    }).isRequired
+}
 export default ItemCard;

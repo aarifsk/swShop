@@ -6,7 +6,7 @@ const ItemCard = ({item}) => (
     <div className="ui card">
         <div className="image">
             <span className="ui green ribbon label">
-                <Price cents={item.price} /></span><img src={item.image} alt="randomimage" />
+                <Price cents={item.price}  /></span><img src={item.image} alt="randomimage" />
         </div>
         <div className="content">
             <a href="#" className="header">{item.name}</a>

@@ -1,10 +1,11 @@
 import React from 'react';
 import {render} from 'react-dom';
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
+import ItemCard from './components/ItemCard';
 
 render(
   <React.StrictMode>
-    <h1>Hello World!</h1>
+    <ItemCard />
   </React.StrictMode>,
   document.getElementById('root')
 );
